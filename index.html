@@ -6,10 +6,78 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body class="lg:w-[1100px] mx-auto">
+    <header>
+        <nav class="lg:mx-6 mx-4">
+            <div class="navbar bg-red-600 my-[50px] rounded-lg">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:-translate-x-0 -translate-x-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li><a href="https://ariful4a.github.io/web-/"><span class="font-extrabold text-green-500">Assignment-3</span></a></li>
+                      <li><a>Item 3</a></li>
+                      <li><a href="">Item 4</a></li>
+                    </ul>
+                  </div>
+                  <h1 class="text-balance font-extrabold text-white text-3xl lg:-translate-x-0 -translate-x-5">Hockey<span class="text-black">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-white"><a>Home</a></li>
+                    <li><a href="https://ariful4a.github.io/web-/"><span class="font-bold text-green-500">Assignment-3</span></a></li>
+                    <li class="text-white"><a>Pages</a></li>
+                    <li class="text-white"><a href="">Blog</a></li>
+                    <li class="text-white"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                  <div class="hidden lg:flex">
+                    <img src="imgages/serch.png.svg" alt="">
+                  </div>
+                  <a class="btn w-[100px] text-black shadow-black">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+    </header>
     <main>
+        <section>
+            <div class="lg:mx-6 mx-4">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="imgages/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img src="imgages/2.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="imgages/3.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img src="imgages/4.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
         <section class="grid lg:grid-cols-2 gap-4 border-2 border-red-500 rounded-2xl py-2 px-2 lg:mx-6 mx-4 my-10">
             <div class="lg:flex gap-4 border-2 border-green-700 rounded-xl py-2 px-2">
                 <div class="lg:mx-0 mx-5 mt-2">
